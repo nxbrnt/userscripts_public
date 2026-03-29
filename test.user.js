@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Multiband Audio Compressor (Octave Bands, Dual Mono)
-// @version      2.1
+// @version      2.2
 // @description  Extreme multiband compression - 1 band per octave, dual mono, ~flat output
 // @author       nxbrnt
 // @downloadURL  https://github.com/nxbrnt/userscripts_public/raw/refs/heads/main/test.user.js
@@ -15,7 +15,7 @@
     'use strict';
 
     var ATTACK  = 0.001;
-    var RELEASE = 0.1;
+    var RELEASE = 0.07;
     var processedVideos = new WeakSet();
 
     // 10 octave bands spanning ~20 Hz – ~20 kHz.
