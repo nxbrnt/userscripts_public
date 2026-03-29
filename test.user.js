@@ -3,7 +3,7 @@
 // @version      2.1
 // @description  Extreme multiband compression - 1 band per octave, dual mono, ~flat output
 // @author       nxbrnt
-// @downloadURL  https://github.com/nxbrnt/userscripts_public/test.user.js
+// @downloadURL  https://github.com/nxbrnt/userscripts_public/raw/refs/heads/main/test.user.js
 // @match        https://m.twitch.tv/*
 // @match        https://www.twitch.tv/*
 // @match        https://m.youtube.com/*
