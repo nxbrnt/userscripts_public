@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Multiband Audio Compressor (Octave Bands, Dual Mono)
-// @version      2.2
+// @version      2.3
 // @description  Extreme multiband compression - 1 band per octave, dual mono, ~flat output
 // @author       nxbrnt
 // @updateURL    https://github.com/nxbrnt/userscripts_public/raw/refs/heads/main/test.user.js
@@ -72,7 +72,7 @@
         limiter.threshold.value = -1;
         limiter.ratio.value     = 20;
         limiter.attack.value    = 0.001;
-        limiter.release.value   = 0.1;
+        limiter.release.value   = 0.07;
         limiter.knee.value      = 0;
 
         sumNode.connect(limiter);
