@@ -71,7 +71,7 @@
         var limiter = ctx.createDynamicsCompressor();
         limiter.threshold.value = -1;
         limiter.ratio.value     = 20;
-        limiter.attack.value    = 0.001;
+        limiter.attack.value    = ATTACK;
         limiter.release.value   = 0.07;
         limiter.knee.value      = 0;
 
