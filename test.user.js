@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Multiband Audio Compressor (Octave Bands, Dual Mono)
-// @version      2.3.1
+// @version      2.3.2
 // @description  Extreme multiband compression - 1 band per octave, dual mono, ~flat output
 // @author       nxbrnt
 // @updateURL    https://github.com/nxbrnt/userscripts_public/raw/refs/heads/main/test.user.js
@@ -16,7 +16,7 @@
     'use strict';
 
     var ATTACK  = 0.001;
-    var RELEASE = 0.07;
+    var RELEASE = 7.0;
     var processedVideos = new WeakSet();
 
     // 10 octave bands spanning ~20 Hz – ~20 kHz.
@@ -43,7 +43,7 @@
         comp.threshold.value = -100; // compress everything above the noise floor
         comp.ratio.value     = 20;   // effectively infinite — collapses dynamic range
         comp.attack.value    = ATTACK;
-        comp.release.value   = RELEASE;
+        comp.release.value   = 0.1;
         comp.knee.value      = 0;    // hard knee
 
         filter.connect(comp);
