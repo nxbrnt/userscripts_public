@@ -41,7 +41,7 @@
 
         var comp = ctx.createDynamicsCompressor();
         comp.threshold.value = -100; // compress everything above the noise floor
-        comp.ratio.value     = 20;   // effectively infinite — collapses dynamic range
+        comp.ratio.value     = 20;   // huge — collapses dynamic range
         comp.attack.value    = ATTACK;
         comp.release.value   = RELEASE;
         comp.knee.value      = 0;    // hard knee
