@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Multiband Audio Compressor (LR4 Crossovers, Dual Mono)
-// @version      3.0.0
+// @version      3.0.1
 // @description  Multiband compression with Linkwitz-Riley 4th-order crossovers, dual mono
 // @author       nxbrnt
 // @updateURL    https://github.com/nxbrnt/userscripts_public/raw/refs/heads/main/test.user.js
@@ -16,7 +16,7 @@
     'use strict';
 
     var ATTACK = 0.001;
-    var RELEASE = 7.0;
+    var RELEASE = 0.07;
     var processedVideos = new WeakSet();
 
     // 9 crossover frequencies (Hz) defining 10 bands:
